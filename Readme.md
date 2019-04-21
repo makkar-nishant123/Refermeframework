@@ -13,7 +13,9 @@ Framework will perform following :
     firefox
 - Multithreading 
 - Analysis engine - which will decide type of failure in the report based on the failure type.
-- Configuration 
+- Configurable different properties 
+- Flag based execution
+- headless execution ? - will learn abput it!
 
 
 It will have following : 
@@ -21,4 +23,50 @@ It will have following :
 - XLS / SQL - data driven approach.
 - Helper classes for UI operations.
 - Test Scripts - Python 
-- 
+- API ?
+- JAVAScript execution 
+- Unit test libraries like mock will be used.
+
+
+===================Hybrid Approach==========
+==Create / Decide Architecture==
+- Put all flags and TCs name - xlsx / text file.
+ 
+- Once flag is TRUE , we will run a TC
+ 
+- In TCs :
+    UI 
+    SQL/XLS
+    UI / BE validations
+    Logs wherever required 
+
+- Utilities/Helper:
+    Before execution : 
+        Data Setup 
+        Data reading etc...
+    During execution : 
+        UI
+        BE - SQL/Linux etc.
+        config_parser - Multhireading , cross browser etc.
+        logs 
+     After Execution  
+        Reporting - Will be called after all test cases are done.
+        Listeners -  Retrying failures.
+        Writing results
+     End
+        Archiving data
+        Creating reports based on results (analytics)
+        
+        
+    
+        
+
+a. Write helper classes 
+b. Decide our test cases.
+c. Validate all our test cases 
+
+
+===Libraries==
+a. selenium
+b. 
+c. 
