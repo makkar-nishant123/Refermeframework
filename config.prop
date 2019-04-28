@@ -1,0 +1,7 @@
+[General]
+constant_status=FAIL
+TC_dir=../Scripts/
+result_file=../data/results.txt
+
+[Archive]
+archive_file=../data/archive.txt
